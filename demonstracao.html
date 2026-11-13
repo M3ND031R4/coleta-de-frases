@@ -316,7 +316,7 @@ const ICON = {
 };
 
 /* ---------- Banco de dados local (IndexedDB) ---------- */
-const DB_NOME = 'indigenista_coleta', DB_VERSAO = 1;
+const DB_NOME = window.MODO_DEMONSTRACAO ? 'indigenista_coleta_demonstracao' : 'indigenista_coleta', DB_VERSAO = 1;
 const LOJAS = ['config','comunidades','participantes','consentimentos','contribuicoes','revisoes','audios','livres','retiradas','registro'];
 let db = null;
 function abrirDB() {
